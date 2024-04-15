@@ -1,0 +1,10 @@
+<p>developer works!</p>
+<p>{{ newDeveloper.firstname }}</p>
+<p>{{ newDeveloper.lastname }}</p>
+<p>{{ newDeveloper.age }}</p>
+<p>{{ newDeveloper.gender }}</p>
+<p>{{ newDeveloper.bio }}</p>
+<app-skill
+  *ngFor="let skill of newDeveloper.skills"
+  [newSkill]="skill"
+></app-skill>
